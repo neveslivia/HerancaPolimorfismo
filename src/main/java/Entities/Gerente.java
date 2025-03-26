@@ -15,6 +15,10 @@ public class Gerente extends  Funcionario{
         return salariogerente += salarioBase + bonus;
 
     }
+    public String toString() {
+        return "Nome: " + nome + " , "+
+                "Salário: " + calcularSalario();
+    }
 
 
 }

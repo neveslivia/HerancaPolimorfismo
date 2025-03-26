@@ -2,8 +2,8 @@ package Entities;
 
 public class Bicicleta extends Veiculo{
     @Override
-    public  String mover(){
-        return  "A bicicleta está se movendo lentamente";
+    public void mover(){
+        System.out.println("A bicicleta está se movendo lentamente");
 
     }
 }

@@ -5,6 +5,8 @@ public class Funcionario {
     protected double salarioBase;
 
     public Funcionario(String nome, double salarioBase) {
+        this.nome = nome;
+        this.salarioBase = salarioBase;
     }
 
 
@@ -12,4 +14,9 @@ public class Funcionario {
         return  salarioBase;
     }
 
+    @Override
+    public String toString() {
+        return "Nome: " + nome + " , " +
+                "Salário: " + calcularSalario();
+    }
 }
